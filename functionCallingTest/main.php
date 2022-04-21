@@ -2,9 +2,9 @@
 
 include 'function.php';
 echo "Which function would you like to run?\n";
-echo "first\n";
-echo "numberCars\n";
-echo "test\n";
+echo "- first\n";
+echo "- numberCars\n";
+echo "- test\n";
 fscanf(STDIN, "%d\n", $function);
 switch ($function){
     case "first":
