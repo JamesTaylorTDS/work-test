@@ -1,25 +1,16 @@
-# Program to check if a number is prime or not
+class Polygon:
+    def sides_no(self):
+        pass
 
-num = 29
+class Triangle(Polygon):
+    def area(self):
+        pass
 
-# To take input from the user
-#num = int(input("Enter a number: "))
+obj_polygon = Polygon()
+obj_triangle = Triangle()
 
-# define a flag variable
-flag = False
+print(type(obj_triangle) == Triangle)   	# true
+print(type(obj_triangle) == Polygon)    	# false
 
-# prime numbers are greater than 1
-if num > 1:
-    # check for factors
-    for i in range(2, num):
-        if (num % i) == 0:
-            # if factor is found, set flag to True
-            flag = True
-            # break out of loop
-            break
-
-# check if flag is True
-if flag:
-    print(num, "is not a prime number")
-else:
-    print(num, "is a prime number")
+print(isinstance(obj_polygon, Polygon)) 	# true
+print(isinstance(obj_triangle, Polygon))	
